@@ -20,8 +20,8 @@ class CardProduct extends React.Component {
             asperiores aliquam est dolores repudiandae suscipit provident?
             Distinctio aliquam tempora voluptate.
           </p>
+          <Counter onCounterChange={(value) => this.props.onCounterChange(value)}/>
         </div>
-        <Counter />
       </div>
     );
   }
