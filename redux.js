@@ -6,7 +6,6 @@ const initialState = {
   age: 19,
 };
 
-
 // Reducer
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -30,7 +29,6 @@ const rootReducer = (state = initialState, action) => {
 // Store
 const store = createStore(rootReducer);
 console.log(store.getState());
-
 
 // Subscription
 store.subscribe(() => {
