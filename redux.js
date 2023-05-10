@@ -1,3 +1,14 @@
+// Todo REDUX
+/*
+  * Store adalah tempat penyimpanan data pada Redux. Store berisi state dari aplikasi, yang dikelola oleh reducer. Untuk membuat store di Redux, kita perlu memanggil createStore() dan menyertakan reducer yang akan mengelola state.
+
+  * Reducer adalah fungsi yang bertanggung jawab untuk memperbarui state pada store. Reducer menerima dua parameter, yaitu state saat ini dan action yang dilakukan, dan mengembalikan state yang baru.
+
+  * Dispatch digunakan untuk memanggil action creator yang akan menghasilkan sebuah action yang berisi informasi tentang tindakan yang dilakukan oleh pengguna. Dispatch akan mengirimkan action tersebut ke reducer untuk memperbarui state pada store.
+
+  * Subscription digunakan untuk mengamati perubahan pada state di store. Ketika terjadi perubahan pada state, subscription akan menjalankan sebuah fungsi yang akan meng-update tampilan aplikasi.
+*/
+
 const redux = require('redux');
 const createStore = redux.createStore;
 
