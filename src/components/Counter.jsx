@@ -1,10 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 class Counter extends React.Component {
-  state = {
-    order: 1,
-  };
-
   handleCounterChange = (newValue) => {
     this.props.onCounterChange(newValue);
   };
@@ -34,6 +31,7 @@ class Counter extends React.Component {
   };
 
   render() {
+    console.log(this.props);
     return (
       <div className='mt-3 flex'>
         <p className='me-2'>Quantity</p>
@@ -43,7 +41,7 @@ class Counter extends React.Component {
         <input
           type='text'
           className='text-center border w-12'
-          value={this.state.order}
+          value={this.props.order}
         />
         <button className=' border px-5' onClick={this.plusButton}>
           +
@@ -53,4 +51,10 @@ class Counter extends React.Component {
   }
 }
 
-export default Counter;
+const mapStateToProps = (state) => {
+  return {
+    order: state.totalOrder,
+  };
+};
+
+export default connect(mapStateToProps)(Counter);
