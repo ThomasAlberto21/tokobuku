@@ -2,36 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class Counter extends React.Component {
-  // handleCounterChange = (newValue) => {
-  //   this.props.onCounterChange(newValue);
-  // };
-
-  // plusButton = () => {
-  //   this.setState(
-  //     {
-  //       order: this.state.order + 1,
-  //     },
-  //     () => {
-  //       this.handleCounterChange(this.state.order);
-  //     }
-  //   );
-  // };
-
-  // minusButton = () => {
-  //   if (this.state.order > 0) {
-  //     this.setState(
-  //       {
-  //         order: this.state.order - 1,
-  //       },
-  //       () => {
-  //         this.handleCounterChange(this.state.order);
-  //       }
-  //     );
-  //   }
-  // };
-
   render() {
-    console.log(this.props);
     return (
       <>
         <div className='mt-3 flex'>
@@ -48,7 +19,7 @@ class Counter extends React.Component {
             +
           </button>
         </div>
-        <button className='px-20 py-2 my-6 rounded-lg bg-black text-white font-semibold'>
+        <button className='w-full py-3 my-6 rounded-lg border border-1 border-black text-black font-semibold'>
           Add To Cart
         </button>
       </>

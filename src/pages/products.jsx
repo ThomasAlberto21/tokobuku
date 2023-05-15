@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import CardProduct from '../components/CardProduct';
 
 class Product extends React.Component {
@@ -23,7 +24,7 @@ class Product extends React.Component {
               className='w-6 h-6'
             />
             <div className='count bg-blue-800 rounded-full w-6 h-6 text-white text-center center grid content-center text-sm'>
-              {this.state.order}
+              {this.props.order}
             </div>
           </div>
         </div>
@@ -35,4 +36,10 @@ class Product extends React.Component {
   }
 }
 
-export default Product;
+const mapStateToProps = (state) => {
+  return {
+    order: state.totalOrder,
+  };
+};
+
+export default connect(mapStateToProps)(Product);
