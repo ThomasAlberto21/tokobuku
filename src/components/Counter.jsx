@@ -64,9 +64,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handlePlus: () => dispatch({ type: 'PLUS_ORDER' }),
-    handleMinus: () => dispatch({ type: 'MINUS_ORDER' }),
+    plusButton: () => dispatch({ type: 'PLUS_ORDER' }),
+    minusButton: () => dispatch({ type: 'MINUS_ORDER' }),
   };
 };
 
-export default connect(mapStateToProps)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
