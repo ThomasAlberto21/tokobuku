@@ -19,7 +19,7 @@ class Counter extends React.Component {
             +
           </button>
         </div>
-        <button className='w-full py-3 my-6 rounded-lg border border-1 border-black text-black font-semibold'>
+        <button className='w-full py-3 my-6 rounded-lg border border-1 border-black text-black font-semibold hover:bg-black hover:text-white'>
           Add To Cart
         </button>
       </>

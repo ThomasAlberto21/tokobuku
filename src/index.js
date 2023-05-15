@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Product from './pages/products';
-import Cart from './pages/cart';
+import Cart from './pages/Cart';
+import Product from './pages/Product';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

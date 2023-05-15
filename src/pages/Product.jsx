@@ -4,16 +4,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 class Product extends React.Component {
-  state = {
-    order: 1,
-  };
-
-  handleCounterChange = (newValue) => {
-    this.setState({
-      order: newValue,
-    });
-  };
-
   render() {
     return (
       <>
@@ -31,9 +21,7 @@ class Product extends React.Component {
             </div>
           </Link>
         </div>
-        <CardProduct
-          onCounterChange={(newValue) => this.handleCounterChange(newValue)}
-        />
+        <CardProduct />
       </>
     );
   }

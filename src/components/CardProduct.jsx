@@ -5,7 +5,7 @@ class CardProduct extends React.Component {
   state = {
     price: 20000,
   };
-  
+
   render() {
     return (
       <div className='lg:flex mt-10'>
@@ -24,9 +24,7 @@ class CardProduct extends React.Component {
             asperiores aliquam est dolores repudiandae suscipit provident?
             Distinctio aliquam tempora voluptate.
           </p>
-          <Counter
-            onCounterChange={(value) => this.props.onCounterChange(value)}
-          />
+          <Counter />
         </div>
       </div>
     );
