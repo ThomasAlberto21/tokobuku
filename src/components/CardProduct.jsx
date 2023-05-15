@@ -2,6 +2,10 @@ import React from 'react';
 import Counter from './Counter';
 
 class CardProduct extends React.Component {
+  state = {
+    price: 20000,
+  };
+  
   render() {
     return (
       <div className='lg:flex mt-10'>
@@ -14,13 +18,15 @@ class CardProduct extends React.Component {
         </div>
         <div className='mt-10'>
           <h1 className='font-bold text-5xl'>Buku Self Improvment</h1>
-          <p className='font-normal mt-2'>Rp.20.000</p>
+          <p className='font-normal mt-2'>Rp.{this.state.price}</p>
           <p className='mt-5'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             asperiores aliquam est dolores repudiandae suscipit provident?
             Distinctio aliquam tempora voluptate.
           </p>
-          <Counter onCounterChange={(value) => this.props.onCounterChange(value)}/>
+          <Counter
+            onCounterChange={(value) => this.props.onCounterChange(value)}
+          />
         </div>
       </div>
     );
