@@ -7,15 +7,21 @@ class Counter extends React.Component {
       <>
         <div className='mt-3 flex'>
           <p className='me-2'>Quantity</p>
-          <button className='border px-5' onClick={this.props.minusButton}>
+          <button
+            className='border px-5 hover:bg-black hover:text-white'
+            onClick={this.props.minusButton}
+          >
             -
           </button>
           <input
             type='text'
-            className='text-center border w-12'
+            className='text-center border w-12 '
             value={this.props.order}
           />
-          <button className=' border px-5' onClick={this.props.plusButton}>
+          <button
+            className=' border px-5 hover:bg-black hover:text-white'
+            onClick={this.props.plusButton}
+          >
             +
           </button>
         </div>

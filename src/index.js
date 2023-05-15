@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const globalState = {
-  totalOrder: 0,
+  totalOrder: 1,
 };
 
 // Reducer
